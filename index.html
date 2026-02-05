@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dylan Alcoy Media | Instant Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <style>
+      .glass {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(18px);
+      }
+      .fade-up {
+        animation: fadeUp 0.8s ease forwards;
+      }
+      .hover-lift {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .hover-lift:hover {
+        transform: translateY(-6px) scale(1.01);
+        box-shadow: 0 24px 50px rgba(0, 209, 255, 0.18);
+      }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[#050505] text-white">
+    <main class="mx-auto max-w-6xl px-6 py-12 lg:py-16">
+      <header class="text-center fade-up">
+        <p class="text-sm uppercase tracking-[0.35em] text-[#00D1FF]/80">
+          Fintech Midnight
+        </p>
+        <h1 class="mt-4 text-4xl font-semibold sm:text-5xl">
+          Dylan Alcoy Media
+        </h1>
+        <p class="mt-4 text-lg text-white/70">
+          Premium Photography &amp; Videography. Instant booking via secure
+          deposit.
+        </p>
+      </header>
+
+      <section class="mt-12 grid gap-6 md:grid-cols-2 fade-up">
+        <article class="glass hover-lift rounded-3xl p-6">
+          <h2 class="text-xl font-semibold">Property Inspection</h2>
+          <p class="mt-2 text-white/70">Total: £100 | Deposit: £20</p>
+          <button
+            class="mt-6 w-full rounded-full border border-[#00D1FF]/60 bg-[#00D1FF]/10 px-5 py-3 font-semibold text-[#00D1FF] transition hover:bg-[#00D1FF]/20"
+            data-service="Property Inspection"
+            data-link="https://buy.stripe.com/3cI8wRfCH2WjcSe7Hz0gw03"
+          >
+            Book Now
+          </button>
+        </article>
+
+        <article class="glass hover-lift rounded-3xl p-6">
+          <h2 class="text-xl font-semibold">Real Estate Media</h2>
+          <p class="mt-2 text-white/70">Total: £150 | Deposit: £30</p>
+          <button
+            class="mt-6 w-full rounded-full border border-[#00D1FF]/60 bg-[#00D1FF]/10 px-5 py-3 font-semibold text-[#00D1FF] transition hover:bg-[#00D1FF]/20"
+            data-service="Real Estate Media"
+            data-link="https://buy.stripe.com/fZu00l0HN40n3hE9PH0gw00"
+          >
+            Book Now
+          </button>
+        </article>
+
+        <article class="glass hover-lift rounded-3xl p-6">
+          <h2 class="text-xl font-semibold">Commercial Shoot</h2>
+          <p class="mt-2 text-white/70">Total: £300 | Deposit: £60</p>
+          <button
+            class="mt-6 w-full rounded-full border border-[#00D1FF]/60 bg-[#00D1FF]/10 px-5 py-3 font-semibold text-[#00D1FF] transition hover:bg-[#00D1FF]/20"
+            data-service="Commercial Shoot"
+            data-link="https://buy.stripe.com/aFa8wRduz2Wjf0mbXP0gw02"
+          >
+            Book Now
+          </button>
+        </article>
+
+        <article class="glass hover-lift rounded-3xl p-6">
+          <h2 class="text-xl font-semibold">Event Videography</h2>
+          <p class="mt-2 text-white/70">Total: £500 | Deposit: £100</p>
+          <button
+            class="mt-6 w-full rounded-full border border-[#00D1FF]/60 bg-[#00D1FF]/10 px-5 py-3 font-semibold text-[#00D1FF] transition hover:bg-[#00D1FF]/20"
+            data-service="Event Videography"
+            data-link="https://buy.stripe.com/9B67sN2PV54rcSe3rj0gw04"
+          >
+            Book Now
+          </button>
+        </article>
+      </section>
+
+      <section class="mt-16 fade-up">
+        <div class="glass rounded-3xl p-8">
+          <h2 class="text-2xl font-semibold">Pay Remaining Balance</h2>
+          <p class="mt-3 text-white/70">
+            For existing clients: settle the remaining 80% with a quick payment
+            option below.
+          </p>
+          <div class="mt-6 grid gap-4 md:grid-cols-2">
+            <a
+              href="https://monzo.me/dylanalcoy"
+              class="hover-lift rounded-2xl border border-[#00D1FF]/50 bg-[#00D1FF]/10 px-5 py-4 text-center font-semibold text-[#00D1FF]"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Apple / Google Pay
+            </a>
+            <a
+              href="https://revolut.me/d_alcoy"
+              class="hover-lift rounded-2xl border border-[#00D1FF]/50 bg-[#00D1FF]/10 px-5 py-4 text-center font-semibold text-[#00D1FF]"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Revolut
+            </a>
+          </div>
+
+          <div class="mt-8 rounded-2xl border border-white/10 bg-white/5 p-6">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <h3 class="text-lg font-semibold text-white">
+                Bank Details
+              </h3>
+              <button
+                id="copy-details"
+                class="rounded-full border border-[#00D1FF]/60 px-4 py-2 text-sm font-semibold text-[#00D1FF] transition hover:bg-[#00D1FF]/10"
+              >
+                Click to Copy
+              </button>
+            </div>
+            <dl class="mt-4 space-y-2 text-sm text-white/70">
+              <div class="flex justify-between gap-4">
+                <dt>Name</dt>
+                <dd>Dylan Alcoy</dd>
+              </div>
+              <div class="flex justify-between gap-4">
+                <dt>Sort Code</dt>
+                <dd>07-12-26</dd>
+              </div>
+              <div class="flex justify-between gap-4">
+                <dt>Account</dt>
+                <dd>01412205</dd>
+              </div>
+              <div class="flex justify-between gap-4">
+                <dt>IBAN</dt>
+                <dd>GB63 NAIA 0712 2601 41 2205</dd>
+              </div>
+              <div class="flex justify-between gap-4">
+                <dt>SWIFT/BIC</dt>
+                <dd>NAIAGB21</dd>
+              </div>
+            </dl>
+            <p
+              id="copy-feedback"
+              class="mt-3 text-sm text-[#00D1FF] opacity-0 transition"
+            >
+              Bank details copied to clipboard.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      id="booking-modal"
+      class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 px-4"
+    >
+      <div class="glass w-full max-w-md rounded-3xl p-6">
+        <div class="flex items-center justify-between">
+          <h3 class="text-xl font-semibold">Select Date &amp; Time</h3>
+          <button
+            id="close-modal"
+            class="text-sm text-white/60 transition hover:text-white"
+          >
+            Close
+          </button>
+        </div>
+        <p id="service-name" class="mt-2 text-sm text-white/70"></p>
+        <input
+          id="booking-date"
+          type="text"
+          class="mt-4 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-[#00D1FF]"
+          placeholder="Choose a date & time"
+        />
+        <button
+          id="confirm-booking"
+          class="mt-6 w-full rounded-full bg-[#00D1FF] px-5 py-3 font-semibold text-black transition hover:brightness-110"
+        >
+          Confirm &amp; Continue
+        </button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      const modal = document.getElementById("booking-modal");
+      const bookingInput = document.getElementById("booking-date");
+      const confirmButton = document.getElementById("confirm-booking");
+      const serviceName = document.getElementById("service-name");
+      const closeModalButton = document.getElementById("close-modal");
+      const copyButton = document.getElementById("copy-details");
+      const copyFeedback = document.getElementById("copy-feedback");
+
+      let selectedLink = "";
+      let selectedService = "";
+
+      const picker = flatpickr(bookingInput, {
+        enableTime: true,
+        dateFormat: "F j, Y — h:i K",
+        minDate: "today",
+      });
+
+      document.querySelectorAll("[data-link]").forEach((button) => {
+        button.addEventListener("click", () => {
+          selectedLink = button.dataset.link;
+          selectedService = button.dataset.service;
+          serviceName.textContent = `Booking: ${selectedService}`;
+          modal.classList.remove("hidden");
+          modal.classList.add("flex");
+          picker.open();
+        });
+      });
+
+      closeModalButton.addEventListener("click", () => {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      });
+
+      confirmButton.addEventListener("click", () => {
+        if (!bookingInput.value) {
+          bookingInput.focus();
+          return;
+        }
+        window.location.href = selectedLink;
+      });
+
+      copyButton.addEventListener("click", async () => {
+        const details = [
+          "Name: Dylan Alcoy",
+          "Sort Code: 07-12-26",
+          "Account: 01412205",
+          "IBAN: GB63 NAIA 0712 2601 41 2205",
+          "SWIFT/BIC: NAIAGB21",
+        ].join("\n");
+        try {
+          await navigator.clipboard.writeText(details);
+          copyFeedback.classList.remove("opacity-0");
+          setTimeout(() => {
+            copyFeedback.classList.add("opacity-0");
+          }, 2500);
+        } catch (error) {
+          copyFeedback.textContent = "Copy failed. Please select and copy.";
+          copyFeedback.classList.remove("opacity-0");
+        }
+      });
+    </script>
+  </body>
+</html>
