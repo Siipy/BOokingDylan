@@ -175,20 +175,6 @@
       </section>
 
       <section class="flex flex-col items-center gap-4 text-center">
-        <div class="w-full max-w-md text-left">
-          <label
-            for="client-note"
-            class="text-xs uppercase tracking-[0.3em] text-white/50"
-          >
-            Client Note (Optional)
-          </label>
-          <textarea
-            id="client-note"
-            rows="3"
-            placeholder="Add a short note about the property, access, or priorities."
-            class="mt-3 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white/80 placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-[#00D1FF]"
-          ></textarea>
-        </div>
         <button
           id="confirm-booking"
           class="hidden w-full max-w-md rounded-full bg-[#00D1FF] px-6 py-4 text-base font-semibold text-black transition hover:brightness-110"
@@ -215,7 +201,6 @@
         "https://buy.stripe.com/3cI8wRfCH2WjcSe7Hz0gw03";
       const confirmButton = document.getElementById("confirm-booking");
       const selectionPreview = document.getElementById("selection-preview");
-      const clientNoteInput = document.getElementById("client-note");
 
       const updateTimeRules = (selectedDates, dateStr, instance) => {
         const selectedDate = selectedDates[0] || new Date();
@@ -256,12 +241,8 @@
         if (!selectedDateTime) {
           return;
         }
-        const note = clientNoteInput.value.trim();
-        const reference = note
-          ? `${selectedDateTime} | ${note}`
-          : selectedDateTime;
         const redirectUrl = `${stripeBaseUrl}?client_reference_id=${encodeURIComponent(
-          reference
+          selectedDateTime
         )}`;
         window.location.href = redirectUrl;
       });
